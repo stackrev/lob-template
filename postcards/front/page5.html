@@ -1,0 +1,100 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bangers&display=swap"
+      rel="stylesheet"
+    />
+    <title>Lob.com Sample 6x9 Postcard Front</title>
+    <style>
+      *,
+      *:before,
+      *:after {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+      }
+
+      body {
+        width: 9.25in;
+        height: 6.25in;
+        margin: 0;
+        padding: 0;
+        /* If using an image, the background image should have dimensions of 2775x1875 pixels. */
+        background-color: #890808;
+      }
+
+      #box-outer {
+        position: absolute;
+        width: 8.75in;
+        height: 5.875in;
+        left: 0.25in;
+        top: 0.1875in;
+        border: 0.04in solid white;
+        background-color: alpha;
+      }
+      #box-inner {
+        position: absolute;
+        width: 8.67in;
+        height: 5.795in;
+        left: 0.01in;
+        top: 0.01in;
+        border: 0.04in solid white;
+        background-color: alpha;
+      }
+      #texas-logo {
+        position: absolute;
+        top: 0.25in;
+        left: 3.1in;
+        width: 5.4in;
+        height: 5.4in;
+        background-image: url(https://leappropertieslobimages.s3.us-west-2.amazonaws.com/Texas+LEAP+Location_5.17x4.92.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+
+      #local {
+        position: absolute;
+        font-family: "Bangers";
+        font-weight: 400;
+        font-size: 120pt;
+        color: white;
+        text-shadow: 0.15in 0.15in #172d47;
+        left: 0.32in;
+        top: 0.15in;
+      }
+      #cash-offer {
+        position: absolute;
+        font-family: "Bangers";
+        font-weight: 400;
+        font-size: 103pt;
+        color: white;
+        text-shadow: 0.12in 0.13in #172d47;
+        left: 0.32in;
+        top: 1.9in;
+        line-height: 1.6in;
+      }
+      #in-24hours {
+        position: absolute;
+        font-family: "Bangers";
+        font-weight: 400;
+        font-size: 41.7pt;
+        color: white;
+        text-shadow: 0.05in 0.05in #172d47;
+        left: 1.95in;
+        top: 5.02in;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="box-outer">
+      <div id="box-inner">
+        <div id="texas-logo"></div>
+        <div id="local">local</div>
+        <div id="cash-offer">cash<br />offer</div>
+        <div id="in-24hours">...in 24hours</div>
+      </div>
+    </div>
+  </body>
+</html>
