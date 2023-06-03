@@ -1,0 +1,75 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
+  <title>Lob.com Sample 6x18 Self Mailer</title>
+  <style>
+    *,
+    *:before,
+    *:after {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+
+    body {
+      width: 18.25in;
+      height: 6.25in;
+      margin: 0;
+      padding: 0;
+      background-color: rgba(181, 178, 177);
+      background-image: url(https://leappropertieslobimages.s3.us-west-2.amazonaws.com/LOB+BIFOLD+OUTSIDE+6.25x18.25+v1_No+Merge+Variables+or+Ink+Free+Zone.png);
+      background-size: 18.25in 6.25in;
+      background-repeat: no-repeat;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 700;
+    }
+
+    #safe-area {
+      position: absolute;
+      width: 17.75in;
+      height: 5.75in;
+      left: 0.25in;
+      top: 0.25in;
+    }
+
+    #ink-free {
+      position: absolute;
+      width: 4in;
+      height: 2.375in;
+      left: 4.975in;
+      top: 3.375in;
+    }
+
+    #first-name {
+      position: absolute;
+      left: 9.26in;
+      top: 1.1in;
+      font-size: 15.3pt;
+      font-weight: 800;
+      color: #0A3D62;
+    }
+  </style>
+</head>
+
+<body>
+
+  <body>
+    <div id="safe-area">
+      <!-- All text should appear within the safe area. -->
+      <div class="text">
+      </div>
+
+      <div id="first-name">{{first_name}},</div>
+      <div id="ink-free">
+        <div class="text">
+          <!-- Do not place any artwork or text in the ink free area. Address and postage will be automatically printed here by Lob. -->
+        </div>
+      </div>
+  </body>
+
+</html>
