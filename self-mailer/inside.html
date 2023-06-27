@@ -1,11 +1,11 @@
 <html>
 
 <head>
-  <meta charset="UTF-8">
-
+  <meta charset="UTF-8" />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
     rel="stylesheet" />
-  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://use.typekit.net/byr8pdu.css" />
+
   <title>6x18 Self Mailer Inside</title>
   <style>
     *,
@@ -17,68 +17,525 @@
     }
 
     body {
+      position: relative;
       width: 18.25in;
       height: 6.25in;
       margin: 0;
       padding: 0;
-      background-color: rgba(181, 178, 177);
-      background-image: url(https://leappropertieslobimages.s3.us-west-2.amazonaws.com/LOB+BIFOLD+INSIDE+6.25x18.25+v1_NO+QR+CODE.png);
+      background-image: url(https://leappropertieslobimages.s3.us-west-2.amazonaws.com/Large+Tie+Dye+Background_18.25w+x+6.25h.png);
       background-size: 18.25in 6.25in;
       background-repeat: no-repeat;
       font-family: "Montserrat", sans-serif;
       font-weight: 700;
     }
 
-    #safe-area {
+    #page-inside {
       position: absolute;
-      width: 17.75in;
-      height: 5.75in;
-      left: 0.25in;
-      top: 0.25in;
+      width: 18.25in;
+      height: 6.25in;
+      background-image: url(https://leappropertieslobimages.s3.us-west-2.amazonaws.com/Large+Tie+Dye+Background_18.25w+x+6.25h.png);
+      background-size: contain;
+      background-repeat: no-repeat;
     }
 
-    #ink-free {
+    #inside-1 {
       position: absolute;
-      width: 4in;
-      height: 2.375in;
-      left: 4.975in;
-      top: 3.375in;
+      width: 4.5625in;
+      height: 6.25in;
+      background-color: white;
+    }
+
+    #property-qualify {
+      position: absolute;
+      text-align: center;
+      font-size: 18.2pt;
+      font-weight: 800;
+      color: #172d47;
+      top: 0.3in;
+      left: 0.8in;
+    }
+
+    #ovals-group {
+      position: absolute;
+      width: 2.5in;
+      height: 5in;
+      top: 1.05in;
+      left: 1.35in;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    .oval {
+      position: absolute;
+      width: 1.8in;
+      height: 0.5in;
+      left: 1.28in;
+      background-image: url(https://leappropertieslobimages.s3.us-west-2.amazonaws.com/Plain+Blue+Oval_1.78x0.49.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      text-align: center;
+      font-size: 13.4pt;
+      font-weight: 800;
+      color: white;
+      justify-content: center;
+      display: flex;
+      align-items: center;
+    }
+
+    #oval-outdated{
+      top: 1.05in;
+    }
+    #oval-big-repairs{
+      top: 1.62in;
+    }
+    #oval-tenant-issues{
+      top: 2.19in;
+    }
+    #oval-relocating{
+      top: 2.76in;
+    }
+    #oval-no-time{
+      top: 3.32in;
+    }
+    #oval-inherited{
+      top: 3.9in;
+    }
+    #oval-debts-liens{
+      top: 4.47in;
+    }
+    #oval-foreclosure{
+      top: 5.04in;
+    }
+
+    #inside-2 {
+      position: absolute;
+      width: 4.5625in;
+      height: 6.25in;
+      left: 4.5625in;
+    }
+
+    #inside-2-dark-circle {
+      position: absolute;
+      width: 3in;
+      height: 3in;
+      top: 2.7in;
+      left: 0.1in;
+      background-image: url(https://leappropertieslobimages.s3.us-west-2.amazonaws.com/Dark+Blue+Circle_2.93dia.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    #inside-2-dye-circle {
+      position: absolute;
+      width: 2.7in;
+      height: 2.7in;
+      top: 3.4in;
+      left: 1.7in;
+      background-image: url(https://leappropertieslobimages.s3.us-west-2.amazonaws.com/Tie+Dye+Blue+Circle_2.67.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    #inside-2-distressed {
+      position: absolute;
+      width: 2.3in;
+      height: 2.3in;
+      top: 3.6in;
+      left: 1.9in;
+      background-image: url(https://leappropertieslobimages.s3.us-west-2.amazonaws.com/Distressed+House+Photo_2.36dia.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    #easy-way {
+      position: absolute;
+      width: 3.3in;
+      height: 0.5in;
+      top: 0.5in;
+      left: 0.7in;
+      background-image: url(https://leappropertieslobimages.s3.us-west-2.amazonaws.com/The+Easy+Way+to+Sell_3.25x0.417.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    #step-1 {
+      position: absolute;
+      left: 0.3in;
+      top: 1.15in;
+      width: 2in;
+    }
+
+    .step-arrow {
+      position: absolute;
+      width: 0.42in;
+      height: 0.42in;
+      top: 0;
+      left: 0;
+      background-image: url(https://leappropertieslobimages.s3.us-west-2.amazonaws.com/Blue+Circle+Arrows_0.417x0.417.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    .step-head {
+      position: absolute;
+      text-align: center;
+      font-size: 14.3pt;
+      font-weight: 600;
+      color: white;
+      top: 0.1in;
+      left: 0.5in;
+    }
+
+    .step-body {
+      line-height: 1.5;
+      position: absolute;
+      font-size: 12.5pt;
+      font-weight: 400;
+      color: white;
+      top: 0.5in;
+    }
+
+    #step-2 {
+      position: absolute;
+      left: 2.4in;
+      top: 1.15in;
+      width: 2in;
+    }
+
+    #step-3 {
+      position: absolute;
+      left: 0.3in;
+      top: 2.9in;
+      width: 2in;
+    }
+
+    #inside-3 {
+      position: absolute;
+      width: 4.6in;
+      height: 6.25in;
+      left: 9.125in;
+      background-color: white;
+    }
+
+    #benefits-selling {
+      position: absolute;
+      left: 0.15in;
+      top: 0.55in;
+      font-size: 18.2pt;
+      font-weight: 800;
+      color: #009be1;
+    }
+
+    #benefits-texts {
+      position: absolute;
+      left: 0.4in;
+      top: 1in;
+      font-size: 14.3pt;
+      font-weight: 800;
+      color: #172d47;
+      line-height: 1.5;
+    }
+
+    #three-houses {
+      position: absolute;
+      width: 4.32in;
+      height: 1in;
+      top: 2.7in;
+      left: 0.2in;
+      background-image: url(https://leappropertieslobimages.s3.us-west-2.amazonaws.com/9+Blue+Houses_4.29x0.417.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    #make-leap {
+      position: absolute;
+      width: 3.5in;
+      height: 1in;
+      top: 3.5in;
+      left: 0.6in;
+      background-image: url(https://leappropertieslobimages.s3.us-west-2.amazonaws.com/Make+Your+LEAP_3.39x0.51.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    #benefits-detail {
+      position: absolute;
+      left: 0.18in;
+      top: 4in;
+      width: 4.3in;
+      font-size: 12.1pt;
+      font-weight: 600;
+      color: black;
+    }
+
+    .benefits-detail-para {
+      margin-bottom: -8;
+    }
+
+    #inside-4 {
+      position: absolute;
+      width: 4.5125in;
+      height: 6.25in;
+      left: 13.7375in;
+    }
+
+    #inside-4-dark-circle-mask {
+      position: absolute;
+      width: 3in;
+      height: 2.5in;
+      top: 0in;
+      left: 1.35in;
+      overflow: hidden;
+    }
+
+    #inside-4-dark-circle {
+      position: absolute;
+      width: 3in;
+      height: 3in;
+      top: -0.5in;
+      left: 0;
+      background-image: url(https://leappropertieslobimages.s3.us-west-2.amazonaws.com/Dark+Blue+Circle_2.93dia.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    #inside-4-dye-circle {
+      position: absolute;
+      width: 2.7in;
+      height: 2.7in;
+      top: 0.4in;
+      left: 0.18in;
+      background-image: url(https://leappropertieslobimages.s3.us-west-2.amazonaws.com/Tie+Dye+Blue+Circle_2.67.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    #inside-4-nice-house {
+      position: absolute;
+      width: 2.3in;
+      height: 2.3in;
+      top: 0.6in;
+      left: 0.38in;
+      background-image: url(https://leappropertieslobimages.s3.us-west-2.amazonaws.com/Nice+House_2.36dia.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    #qr-form {
+      position: absolute;
+      left: 0.35in;
+      top: 3.75in;
     }
 
     #qr-code {
       position: absolute;
-      left: 14.1in;
-      top: 3.5in;
+      left: 0.3in;
       width: 105;
       height: 105;
       background-color: white;
+    }
+
+    #scan-here {
+      position: absolute;
+      left: 0.1in;
+      width: 2in;
+      top: 1.2in;
+      font-size: 16.7pt;
+      font-weight: 800;
+      color: white;
+    }
+
+    #reviews-social {
+      position: absolute;
+      width: 2in;
+      top: 1.5in;
+      font-size: 8.2pt;
+      font-weight: 600;
+      color: white;
+    }
+
+    #contact-form {
+      position: absolute;
+      left: 2.25in;
+      top: 3.45in;
+    }
+
+    #contact-us {
+      position: absolute;
+      left: 0.15in;
+      width: 2in;
+      font-size: 16.7pt;
+      font-weight: 800;
+      color: white;
+    }
+
+    #texts {
+      position: absolute;
+      left: 0.5in;
+      top: 0.3in;
+      font-size: 10.3pt;
+      font-weight: 600;
+      line-height: 3.4;
+      color: white;
+    }
+
+    #icons {
+      position: absolute;
+      top: 0.3in;
+    }
+
+    #phone-icon {
+      width: 0.45in;
+      height: 0.45in;
+      background-image: url(https://leappropertieslobimages.s3.us-west-2.amazonaws.com/Phone+Circles+White_0.42x0.42.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      margin-bottom: 0.05in;
+    }
+
+    #web-icon {
+      width: 0.45in;
+      height: 0.45in;
+      background-image: url(https://leappropertieslobimages.s3.us-west-2.amazonaws.com/Web+Circles+White_0.42x0.42.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      margin-bottom: 0.05in;
+    }
+
+    #ig-icon {
+      width: 0.45in;
+      height: 0.45in;
+      background-image: url(https://leappropertieslobimages.s3.us-west-2.amazonaws.com/IG+Circle+White_0.42x0.42.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      margin-bottom: 0.05in;
+    }
+
+    #ytb-icon {
+      width: 0.45in;
+      height: 0.45in;
+      background-image: url(https://leappropertieslobimages.s3.us-west-2.amazonaws.com/YouTube+Circles+White_0.42x0.42.png);
+      background-size: contain;
+      background-repeat: no-repeat;
     }
   </style>
 </head>
 
 <body>
 
-  <body>
-    <div id="safe-area">
-      <!-- All text should appear within the safe area. -->
-      <div class="text">
+  <div id="page-inside">
+    <div id="inside-1">
+      <div id="property-qualify">
+        DOES YOUR SITUATION<br />
+        QUALIFY?
       </div>
+      <div id="oval-outdated" class="oval">OUTDATED</div>
+      <div id="oval-big-repairs" class="oval">BIG REPAIRS</div>
+      <div id="oval-tenant-issues" class="oval">TENANT ISSUES</div>
+      <div id="oval-relocating" class="oval">RELOCATING</div>
+      <div id="oval-no-time" class="oval">NO TIME</div>
+      <div id="oval-inherited" class="oval">INHERITED</div>
+      <div id="oval-debts-liens" class="oval">DEBTS / LIENS</div>
+      <div id="oval-foreclosure" class="oval">FORECLOSURE</div>
+    </div>
+  </div>
+  <div id="inside-2">
+    <div id="inside-2-dark-circle"></div>
+    <div id="inside-2-dye-circle"></div>
+    <div id="inside-2-distressed"></div>
+    <div id="easy-way"></div>
+    <div id="step-1">
+      <div class="step-arrow"></div>
+      <div class="step-head">STEP ONE</div>
+      <div class="step-body">
+        We discuss your<br />
+        goals and confirm<br />the property<br />qualifies for an offer.
+      </div>
+    </div>
+    <div id="step-2">
+      <div class="step-arrow"></div>
+      <div class="step-head">STEP TWO</div>
+      <div class="step-body">
+        You receive an offer<br />
+        based on market<br />
+        value and property<br />
+        condition.
+      </div>
+    </div>
+    <div id="step-3">
+      <div class="step-arrow"></div>
+      <div class="step-head">STEP THREE</div>
+      <div class="step-body">
+        We close at a local<br />
+        title company on<br />
+        your schedule.
+      </div>
+    </div>
+  </div>
+  <div id="inside-3">
+    <div id="benefits-selling">BENEFITS OF SELLING TO LEAP</div>
+    <div id="benefits-texts" style="text-align:center;">
+      NO FEES OR COMMISSIONS<br />
+      SELL IN 'AS-IS' CONDITION<br />
+      NO SHOWINGS, NO HASSLE<br />
+      FAIR CASH OFFER, NO OBLIGATION<br />
+      CHOOSE YOUR CLOSING DAY
+    </div>
+    <div id="three-houses"></div>
+    <div id="make-leap"></div>
+    <div id="benefits-detail">
+      <p class="benefits-detail-para">
+        Our mission is to help everyone make their LEAP.
+      </p>
+      <p class="benefits-detail-para" style="text-align:center;">
+        Whether you're looking to downsize,<br />
+        upgrade, pay off debt, get rid of a problem<br />
+        property, live out of state or don't want to deal<br />
+        with the hassle of selling on market...<br />
+        LEAP Properties has the solution.
+      </p>
+      <p class="benefits-detail-para">
+        We guarantee the fastest and most reliable way to sell your property,
+        so you can make your LEAP.
+      </p>
+    </div>
+  </div>
+  <div id="inside-4">
+    <div id="inside-4-dark-circle-mask">
+      <div id="inside-4-dark-circle"></div>
+    </div>
+    <div id="inside-4-dye-circle"></div>
+    <div id="inside-4-nice-house"></div>
+    <div id="qr-form">
       <div id="qr-code"></div>
-
-      <div id="ink-free">
-        <div class="text">
-          <!-- Do not place any artwork or text in the ink free area. Address and postage will be automatically printed here by Lob. -->
-        </div>
+      <div id="scan-here">SCAN HERE</div>
+      <div id="reviews-social">REVIEWS, SOCIALS & MORE</div>
+    </div>
+    <div id="contact-form">
+      <div id="contact-us">CONTACT US</div>
+      <div id="icons">
+        <div id="phone-icon"></div>
+        <div id="web-icon"></div>
+        <div id="ig-icon"></div>
+        <div id="ytb-icon"></div>
       </div>
-  </body>
-
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
-  <script type="text/javascript">
-    var qrcode = new QRCode(document.getElementById("qr-code"), {
-      text: "https://linktr.ee/leapproperties",
-      width: 105,
-      height: 105,
-    });
-  </script>
+      <div id="texts">
+        832-536-5300<br />
+        www.selltoleap.com<br />
+        @LEAP_Properties<br />
+        @LEAPProperties
+      </div>
+    </div>
+  </div>
+  </div>
+</body>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script type="text/javascript">
+  var qrcode = new QRCode(document.getElementById("qr-code"), {
+    text: "https://linktr.ee/leapproperties",
+    width: 105,
+    height: 105,
+  });
+</script>
 
 </html>
