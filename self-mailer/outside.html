@@ -1,12 +1,12 @@
 <html>
 
 <head>
-  <meta charset="UTF-8">
-
+  <meta charset="UTF-8" />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
     rel="stylesheet" />
-  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
-  <title>Lob.com Sample 6x18 Self Mailer</title>
+  <link rel="stylesheet" href="https://use.typekit.net/byr8pdu.css" />
+
+  <title>6x18 Self Mailer Outside</title>
   <style>
     *,
     *:before,
@@ -17,59 +17,324 @@
     }
 
     body {
+      position: relative;
       width: 18.25in;
       height: 6.25in;
       margin: 0;
       padding: 0;
-      background-color: rgba(181, 178, 177);
-      background-image: url(https://leappropertieslobimages.s3.us-west-2.amazonaws.com/LOB+BIFOLD+OUTSIDE+6.25x18.25+v1_No+Merge+Variables+or+Ink+Free+Zone.png);
+      background-image: url(https://leappropertieslobimages.s3.us-west-2.amazonaws.com/Large+Tie+Dye+Background_18.25w+x+6.25h.png);
       background-size: 18.25in 6.25in;
       background-repeat: no-repeat;
       font-family: "Montserrat", sans-serif;
       font-weight: 700;
     }
 
-    #safe-area {
+    #left {
       position: absolute;
-      width: 17.75in;
-      height: 5.75in;
-      left: 0.25in;
-      top: 0.25in;
+      width: 9.125in;
+      height: 6.25in;
+      left: 0;
+      top: 0;
+      background-image: url(https://leappropertieslobimages.s3.us-west-2.amazonaws.com/Large+Tie+Dye+Background_18.25w+x+6.25h.png);
+    }
+
+    #client-review {
+      position: absolute;
+      height: 200;
+      width: 200;
+      left: 130;
+      top: 105;
+      background-image: url(https://leappropertieslobimages.s3.us-west-2.amazonaws.com/Client+Review+Arched+Wording_2.02w+x+1h.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+    #left-review-pane {
+      position: absolute;
+      top: 2.2in;
+      left: 0.35in;
+      width: 4in;
+      height: 4in;
+      background-image: url(https://leappropertieslobimages.s3.us-west-2.amazonaws.com/dark+blue+rounded+edge+square_3.93w+x+2.51h.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+    #left-head {
+      position: absolute;
+      top: 1.5in;
+      left: 1.8in;
+      width: 1.2in;
+      height: 1.5in;
+      background-image: url(https://leappropertieslobimages.s3.us-west-2.amazonaws.com/AG+Rounded+Headshot_1.17w+x+1.17h.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+    #left-stars {
+      position: absolute;
+      top: 2.7in;
+      left: 1.75in;
+      width: 1.25in;
+      height: 0.5in;
+      background-image: url(https://leappropertieslobimages.s3.us-west-2.amazonaws.com/Little+Light+Blue+Stars_1.16w+x+0.2h.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+    #left-review {
+      position: absolute;
+      top: 300px;
+      left: 55px;
+      color: white;
+      text-align: center;
+    }
+
+    #left-review-text {
+      font-size: 13.5pt;
+      font-weight: 500;
+    }
+
+    #left-review-bottom-text {
+      position: absolute;
+      font-size: 10.8pt;
+      font-weight: 400;
+      top: 115px;
+      left: 72px;
+    }
+
+    #right-blank {
+      position: absolute;
+      width: 4.5625in;
+      height: 9.125in;
+      left: 4.5625in;
+      top: 0;
+      background-color: white;
+    }
+
+    #right-logo {
+      position: absolute;
+      top: 0.6in;
+      left: 6.4in;
+      width: 2.4in;
+      height: 1.2in;
+      background-image: url(https://leappropertieslobimages.s3.us-west-2.amazonaws.com/LEAP+Logo+No+Mascot_2.29w+x+0.99h.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+    #right-button {
+      position: absolute;
+      top: 162px;
+      left: 635px;
+      width: 190px;
+      height: 38px;
+      color: white;
+      font-size: 16.5pt;
+      font-weight: 700;
+      background-image: url(https://leappropertieslobimages.s3.us-west-2.amazonaws.com/dark+blue+rectangle_1.98w+x+0.42h.png);
+      padding-left: 20px;
+      padding-top: 5px;
+    }
+
+    #right {
+      position: absolute;
+      width: 9.125in;
+      height: 6.25in;
+      left: 9.125in;
+      top: 0;
+    }
+
+    #left-top-back {
+      position: absolute;
+      width: 4in;
+      height: 2.4in;
+      left: 16px;
+      top: 120px;
+      background-color: white;
+    }
+
+    #left-top {
+      position: absolute;
+      top: 145px;
+      left: 35px;
+      color: #0A3D62;
+    }
+
+    #left-top-first {
+      font-size: 15.7pt;
+      font-weight: 800;
+    }
+
+    #left-top-text {
+      font-size: 14.7pt;
+      font-weight: 800;
+    }
+
+    #left-top-button {
+      position: absolute;
+      top: 275px;
+      left: 35px;
+      width: 190px;
+      height: 35px;
+      color: white;
+      font-size: 16.5pt;
+      font-weight: 700;
+      background-image: url(https://leappropertieslobimages.s3.us-west-2.amazonaws.com/dark+blue+rectangle_1.98w+x+0.42h.png);
+      padding-left: 10px;
+      padding-top: 5px;
+    }
+
+    #left-top-mouse {
+      position: absolute;
+      top: 295px;
+      left: 195px;
+      width: 42px;
+      height: 56px;
+      background-image: url(https://leappropertieslobimages.s3.us-west-2.amazonaws.com/Light+Blue+Arrow+Click_0.42w+x+0.56h.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+    #left-bottom {
+      position: absolute;
+      bottom: 60px;
+      left: 30px;
+      color: white;
+    }
+
+    #left-bottom-letter {
+      font-size: 18.2pt;
+      font-weight: 600;
+    }
+
+    #left-bottom-bold-letter {
+      font-size: 28.2pt;
+      font-weight: 800;
+    }
+
+    #blue-tie-dye-mask {
+      position: absolute;
+      left: 2.5in;
+      top: 0.1in;
+      width: 6.6in;
+      height: 6.15in;
+      overflow: hidden;
+    }
+
+    #blue-tie-dye {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 6.6in;
+      height: 6.6in;
+      background-image: url(https://leappropertieslobimages.s3.us-west-2.amazonaws.com/blue+tie+dye+circle_6.45+dia.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    #leap-logo {
+      position: absolute;
+      left: 20px;
+      top: 0.3in;
+      width: 6.07in;
+      height: 6.07in;
+      background-image: url(https://leappropertieslobimages.s3.us-west-2.amazonaws.com/LEAP+Logo+White+Circle_5.92+dia.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    /* #divider {
+        position: absolute;
+        width: 0.04in;
+        height: 6.25in;
+        top: 0;
+        left: 9.04in;
+        background-color: black;
+      } */
+
+    #trim-boundary {
+      position: absolute;
+      width: 18in;
+      height: 6.25in;
+      left: 0.125in;
+      top: 0.125in;
+      border: 1px solid green;
+      display: none;
     }
 
     #ink-free {
       position: absolute;
       width: 4in;
       height: 2.375in;
-      left: 4.975in;
-      top: 3.375in;
+      right: 0.15in;
+      bottom: 0.25in;
+      background-color: white;
     }
 
-    #first-name {
-      position: absolute;
-      left: 9.26in;
-      top: 1.1in;
-      font-size: 15.3pt;
-      font-weight: 800;
-      color: #0A3D62;
-    }
+
   </style>
 </head>
 
 <body>
+  <div id="page-outside">
+    <!-- The following area is the left half of the mailer. -->
+    <div id="left">
+      <div id="client-review"></div>
+      <div id="left-review-pane"></div>
+      <div id="left-head"></div>
+      <div id="left-stars"></div>
+      <div id="left-review">
+        <div id="left-review-text">
+          "LEAP did a good job, a very good job!<br />
+          You have to make sure you find a<br />
+          reputable dealer, a reputable<br />
+          company, somebody you can trust<br />
+          that isn't going to do you wrong."
+        </div>
 
-  <body>
-    <div id="safe-area">
-      <!-- All text should appear within the safe area. -->
-      <div class="text">
+        <div id="left-review-bottom-text">MR. LAWRENCE ADAMS</div>
       </div>
+      <div id="right-blank"></div>
+      <div id="right-logo"></div>
+      <div id="right-button">832-536-5300</div>
 
-      <div id="first-name">{{first_name}},</div>
       <div id="ink-free">
-        <div class="text">
-          <!-- Do not place any artwork or text in the ink free area. Address and postage will be automatically printed here by Lob. -->
+        <!-- Do not place any artwork or text in the ink free area. A white box + address and postage will be automatically printed here by Lob. -->
+      </div>
+    </div>
+
+    <!-- The following area is the right half of the mailer. -->
+    <div id="right">
+      <div id="left-top-back"></div>
+      <div id="left-top">
+        <div id="left-top-first">{{first_name}},</div>
+        <div><br /></div>
+        <div id="left-top-text">Selling your home</div>
+        <div id="left-top-text">hassle free is just</div>
+        <div id="left-top-text">a click away.</div>
+      </div>
+      <div id="left-bottom">
+        <div id="left-bottom-letter">SELL YOUR</div>
+        <div id="left-bottom-bold-letter">PROPERTY</div>
+        <div id="left-bottom-letter">MAKE YOUR</div>
+        <div id="left-bottom-bold-letter">LEAP!</div>
+      </div>
+      <div id="left-top-button">selltoleap.com</div>
+      <div id="left-top-mouse"></div>
+      <div id="blue-tie-dye-mask">
+        <div id="blue-tie-dye">
+          <div id="leap-logo"></div>
         </div>
       </div>
-  </body>
+    </div>
+
+    <!-- <div id="divider"></div> -->
+  </div>
+
+  <div id="trim-boundary">
+    <!-- This border represents where the mailer will be trimmed. Delete this styling before use. -->
+  </div>
+</body>
 
 </html>
