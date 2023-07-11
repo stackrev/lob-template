@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&display=swap" rel="stylesheet">
-  <title>SellToLeap Postcard Back</title>
+  <title>SellToLeap Postcard Back (No QrCode)</title>
   <style>
     *,
     *:before,
@@ -33,7 +33,7 @@
       color: #009BE1;
       text-shadow: 0.08in 0.08in #172d47;
       left: 0.55in;
-      top: 0.65in;
+      top: 0.8in;
       text-align: center;
       line-height: 0.86;
     }
@@ -42,21 +42,21 @@
     #step-1 {
       position: absolute;
       left: 0.6in;
-      top: 2.25in;
+      top: 2.4in;
       width: 5in;
     }
 
     #step-2 {
       position: absolute;
       left: 0.6in;
-      top: 3.55in;
+      top: 3.7in;
       width: 5in;
     }
 
     #step-3 {
       position: absolute;
       left: 0.6in;
-      top: 4.55in;
+      top: 4.7in;
       width: 5in;
     }
 
@@ -91,13 +91,34 @@
       left: 0.5in;
     }
 
-    #contact-form {
+    #leap-logo {
       position: absolute;
-      left: 6.7in;
-      top: 1.4in;
+      width: 2.42in;
+      height: 1.88in;
+      top: 0.43in;
+      left: 5.6in;
+      background-image: url(https://leappropertieslobimages.s3.us-west-2.amazonaws.com/LEAP+Primary+Logo_2.42x1.88.png);
+      background-size: contain;
+      background-repeat: no-repeat;
     }
 
-    #texts {
+    #contact-form {
+      position: absolute;
+      left: 4.9in;
+      top: 2.15in;
+    }
+
+    #contact-form-left {
+      position: absolute;
+      left: 0in;
+    }
+
+    #contact-form-right {
+      position: absolute;
+      left: 2.1in;
+    }
+
+    .icon-texts {
       position: absolute;
       left: 0.43in;
       top: 0.29in;
@@ -107,7 +128,7 @@
       color: #172D47;
     }
 
-    #icons {
+    .icons {
       position: absolute;
       top: 0.3in;
     }
@@ -134,51 +155,6 @@
 
     #ytb-icon {
       background-image: url(https://leappropertieslobimages.s3.us-west-2.amazonaws.com/YouTube+Circles+Light+Blue_0.42x0.42.png);
-    }
-
-    #qr-form {
-      position: absolute;
-      left: 4.45in;
-      top: 1.15in;
-      color: #172D47;
-    }
-
-    #qr-code {
-      position: absolute;
-      left: 0.3in;
-      width: 1.5in;
-      height: 1.5in;
-      background-color: #172D47;
-    }
-
-    #scan-here {
-      position: absolute;
-      left: 0.05in;
-      width: 2in;
-      top: 1.5in;
-      font-size: 21.8pt;
-      font-weight: 800;
-    }
-
-    #reviews-social {
-      position: absolute;
-      width: 3in;
-      top: 1.9in;
-      font-size: 10.7pt;
-      font-weight: 700;
-      letter-spacing: -0.5;
-    }
-
-
-    #leap-logo {
-      position: absolute;
-      width: 1.7in;
-      height: 1.5in;
-      top: 0.4in;
-      left: 6.9in;
-      background-image: url(https://leappropertieslobimages.s3.us-west-2.amazonaws.com/LEAP+Primary+Logo_1.7x1.32.png);
-      background-size: contain;
-      background-repeat: no-repeat;
     }
   </style>
 </head>
@@ -209,24 +185,27 @@
       LEAP!
     </div>
   </div>
-  <div id="qr-form">
-    <div id="qr-code"></div>
-    <div id="scan-here">SCAN HERE</div>
-    <div id="reviews-social">REVIEWS, SOCIALS & MORE</div>
-  </div>
   <div id="leap-logo"></div>
   <div id="contact-form">
-    <div id="icons">
-      <div class="icon" id="phone-icon"></div>
-      <div class="icon" id="web-icon"></div>
-      <div class="icon" id="ig-icon"></div>
-      <div class="icon" id="ytb-icon"></div>
+    <div id="contact-form-left">
+      <div class="icons">
+        <div class="icon" id="phone-icon"></div>
+        <div class="icon" id="web-icon"></div>
+      </div>
+      <div class="icon-texts" id="contact-form-left-texts">
+        832-536-5300<br />
+        www.selltoleap.com<br />
+      </div>
     </div>
-    <div id="texts">
-      832-536-5300<br />
-      www.selltoleap.com<br />
-      @LEAP_Properties<br />
-      @LEAPProperties
+    <div id="contact-form-right">
+      <div class="icons">
+        <div class="icon" id="ig-icon"></div>
+        <div class="icon" id="ytb-icon"></div>
+      </div>
+      <div class="icon-texts" id="contact-form-right-texts">
+        @LEAP_Properties<br />
+        @LEAPProperties
+      </div>
     </div>
   </div>
 </body>
